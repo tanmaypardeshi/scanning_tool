@@ -1,10 +1,14 @@
 # ModelScan Demo
 
-ModelScan is an open source project from Protect AI that scans models to determine if they contain unsafe code. It is the first model scanning tool to support multiple model formats. ModelScan currently supports: H5, Pickle, and SavedModel formats. This protects you when using PyTorch, TensorFlow, Keras, Sklearn, XGBoost, with more on the way.
+ModelScan is an open source project from Protect AI that scans models to determine if they contain unsafe code. It is the first model scanning tool to support multiple model formats. ModelScan currently supports: H5, Pickle, and SavedModel formats. This protects you when using PyTorch, TensorFlow, Keras, Sklearn, XGBoost.
 
 **[Link to the offcial GitHub repository](https://github.com/protectai/modelscan)**
 
-**Model Serialization Attack:** A Model Serialization Attack is where malicious code is added to the contents of a model during serialization(saving) before distribution.
+**Model Serialization Attack:** 
+
+A Model Serialization Attack is where malicious code is added to the contents of a model during serialization(saving) before distribution.
+
+The attack functions by exploiting the saving and loading process of models. When you load a model with `model = torch.load(PATH)`, PyTorch opens the contents of the file and begins to running the code within. The second you load the model the exploit has executed.
 
 **A Model Serialization Attack can be used to execute:**
 
