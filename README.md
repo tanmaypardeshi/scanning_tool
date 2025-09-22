@@ -23,6 +23,8 @@ Read more about how ModelScan works [here](https://github.com/protectai/modelsca
 
 The notebooks included focus on model serialization attack on a particular ML library. We carry out a stealth mock exfiltration attack. Stealth, because the model still works as before the attack. Mock, because we don't actually carry out an exfiltration attack but show a POC where it can be carried out.
 
+This is a clone with small modifications. The original code can be found [here](https://github.com/protectai/modelscan/tree/main/notebooks#notebooks-demonstarting-model-serialization-attacks).
+
 ### Installation and running steps:
 
 1. Create a virtual environment (venv) using:
