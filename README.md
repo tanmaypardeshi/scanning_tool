@@ -35,15 +35,26 @@ This is a clone with small modifications. The original code can be found [here](
 ```
 python3 -m venv venv
 ```
-2. For Mac and Linux, activate venv:
-```
-source venv/bin/activate
-```
+2. Activate venv:
+	* For Mac and Linux:	
+		```
+		source venv/bin/activate
+		```
 3. Install all the necessary [requirements](requirements.txt) in the venv:
 ```
 pip install -r requirements.txt
 ```
-4. Go through the notebook one by one and observe the code in every cell and read the descriptions about it before running the cells one by one.
+4. Create a mock secrets file in your file system (make sure to delete it later). This will be the code we will be injecting into the models. 
+	* For Mac and Linux:
+		```
+		mkdir ~/.aws
+		touch ~/.aws/secrets
+		
+		echo "aws_access_key_id=<access_key_id>" > ~/.aws/secrets 
+		
+		echo "aws_secret_access_key=<aws_secret_key>" >> ~/.aws/secrets
+		```
+5. Go through the notebook one by one and observe the code in every cell and read the descriptions about it before running the cells one by one.
 
 ### Questions:
 1. What is the mock exfiltration attack happening in the code?
