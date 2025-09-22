@@ -21,7 +21,7 @@ Read more about how ModelScan works [here](https://github.com/protectai/modelsca
 * [keras.ipynb](keras.ipynb)
 * [xgboost.ipynb](xgboost.ipynb)
 
-The notebooks included focus on model serialization attack on a particular ML library. We carry out a stealth mock exfiltration attack. Stealth, because the model still works as before the attack. Mock, because we don't actually carry out an exfiltration attack but show a POC where it can be carried out.
+The notebooks included focus on model serialization attacks on a particular ML library. We carry out a stealth mock exfiltration attack. Stealth, because the model still works as before the attack. Mock, because we don't actually carry out an exfiltration attack but show a POC where it can be carried out.
 
 This is a clone with small modifications. The original code can be found [here](https://github.com/protectai/modelscan/tree/main/notebooks#notebooks-demonstarting-model-serialization-attacks).
 
@@ -39,9 +39,9 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-4. Go through the notebook one by one and observe the code in every cell and read the descriptions about it.
+4. Go through the notebook one by one and observe the code in every cell and read the descriptions about it before running the cells one by one.
 
 ### Questions:
-1. What is the mock exfiltration attack happening the code?
-2. Think like an adversary. How this can happen in real life?
+1. What is the mock exfiltration attack happening in the code?
+2. Think like an adversary. How can this happen in real life?
 3. Think like a defender and think of how these results can be helpful. What else can be done after using this tool?
